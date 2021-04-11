@@ -1,0 +1,73 @@
+body {
+  background: black;
+  color: whitesmoke;
+}
+
+h1 {
+  font-size: 4.58rem !important;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 3.8rem !important;
+  line-height: 1;
+}
+
+nav {
+  z-index: 20;
+  ul {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero {
+  .side-menu {
+    width: 5%;
+    height: 100%;
+  }
+  .main-content {
+    width: 95%;
+    height: 100%;
+  }
+}
+
+.page {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  z-index: 10;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+
+  .text-ctn {
+    width: 50%;
+  }
+  .graphic-ctn {
+    width: 50%;
+    // height: 60%;
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 1000;
+    }
+    img {
+      position: relative;
+      border-radius: 50%;
+      margin: auto;
+    }
+  }
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
