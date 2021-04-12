@@ -12,7 +12,7 @@ const About = ({ pageHandler, currentPage, modalHandler }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.2 }}
           className="page about">
           <X size="30" className="absolute left-0 top-0 m-7 cursor-pointer" onClick={() => pageHandler('home')} />
           <div className="text-ctn py-3 px-10 ml-12">
