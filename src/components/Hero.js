@@ -25,10 +25,10 @@ const Hero = ({ modalHandler }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="font-bold flex">
-              I'm <span className="ml-4 font-extrabold text-red-500">M</span>oses,
+              I'm <span className="ml-4 font-extrabold text-red-500">M</span>oses.
             </motion.h1>
             <motion.div transition={{ duration: 0.7, delay: 1.3 }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-              <h1 className="font-extrabold">A Software Engineer</h1>
+              <h1 className="font-extrabold">Software Engineer</h1>
               <p className="mt-3 text-xl opacity-80">
                 Team player, innovative, creative human seeking opportunities where I can make an impact with code.
               </p>
