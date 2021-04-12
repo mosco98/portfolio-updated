@@ -84,4 +84,44 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.modal {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+}
+
+.modal .back-drop {
+  position: absolute;
+  background: rgba(225, 225, 225, 0.35);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal .form-ctn {
+  position: absolute;
+  background: black;
+  width: 35%;
+}
+
+.modal .form-ctn form input {
+  color: black;
+  width: 100%;
+}
+
+.modal .form-ctn form textarea {
+  color: black;
+  width: 100%;
+  height: 12rem;
+}
 /*# sourceMappingURL=main.css.map */

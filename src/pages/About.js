@@ -4,7 +4,7 @@ import { X } from 'react-feather'
 
 import me from '../assets/images/me.png'
 
-const About = ({ pageHandler, currentPage }) => {
+const About = ({ pageHandler, currentPage, modalHandler }) => {
   return (
     <AnimatePresence>
       {currentPage === 'about' && (
@@ -14,7 +14,7 @@ const About = ({ pageHandler, currentPage }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.7 }}
           className="page about">
-          <X size="35" className="absolute left-0 top-0 m-5 cursor-pointer" onClick={() => pageHandler('home')} />
+          <X size="30" className="absolute left-0 top-0 m-5 cursor-pointer" onClick={() => pageHandler('home')} />
           <div className="text-ctn py-3 px-10 ml-12">
             <div className="flex items-center">
               <h2 className="font-bold text-red-500 select-none">Me, Myself & I</h2>
@@ -30,7 +30,9 @@ const About = ({ pageHandler, currentPage }) => {
                 Fan of football, indoor activities, video games and sports generally.
               </p>
               <p className="my-6">Interested in working on ambitious projects with positive people</p>
-              <span className="text-red-500 hover:opacity-50 transition-all ease-out cursor-pointer">
+              <span
+                className="text-red-500 hover:opacity-50 transition-all ease-out cursor-pointer"
+                onClick={modalHandler}>
                 Let's connect
               </span>
             </div>

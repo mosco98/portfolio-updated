@@ -4,7 +4,7 @@ import { ArrowRight } from 'react-feather'
 
 import nerdFace from '../assets/images/nerd_face (1).gif'
 
-const Hero = () => {
+const Hero = ({ modalHandler }) => {
   return (
     <div className="main-content flex items-center px-7">
       <div className="container select-none">
@@ -39,7 +39,8 @@ const Hero = () => {
           transition={{ delay: 2 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="mt-16 hover:bg-red-500 py-4 px-12 outline-none border border-red-500 transition-all ease-out focus:outline-none flex items-center content-around">
+          className="mt-16 hover:bg-red-500 py-4 px-12 outline-none border border-red-500 transition-all ease-out focus:outline-none flex items-center content-around"
+          onClick={modalHandler}>
           GET IN TOUCH <ArrowRight className="ml-1" />
         </motion.button>
       </div>
