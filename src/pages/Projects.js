@@ -41,7 +41,7 @@ const Projects = ({ pageHandler, currentPage }) => {
             variants={container}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-3 gap-4 overflow-scroll w-3/5 mx-auto mt-20">
+            className="grid grid-cols-3 gap-4 w-3/5 mx-auto mt-20">
             <motion.div variants={item} className="bg-red-100 h-40 cursor-pointer hover:opacity-80">
               1
             </motion.div>
