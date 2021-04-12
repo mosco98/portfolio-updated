@@ -31,17 +31,18 @@ const Projects = ({ pageHandler, currentPage }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.7 }}
           className="page projects">
-          <X size="30" className="absolute left-0 top-0 m-5 cursor-pointer z-10" onClick={() => pageHandler('home')} />
-          <h3
-            className="font-bold absolute top-0 text-white select-none mb-10 text-8xl mx-5 my-10 z-0"
-            style={{ opacity: '0.135' }}>
-            Projects
-          </h3>
+          <X size="30" className="absolute left-0 top-0 m-7 cursor-pointer z-10" onClick={() => pageHandler('home')} />
+
           <motion.div
             variants={container}
             initial="hidden"
             animate="visible"
-            className="grid grid-cols-3 gap-4 w-3/5 mx-auto mt-20">
+            className="grid grid-cols-3 gap-4 w-3/5 mx-auto mt-20 relative">
+            <h4
+              className="font-bold absolute top-0 text-white select-none text-7xl -mt-10 -ml-6 z-0"
+              style={{ opacity: '0.135' }}>
+              Projects
+            </h4>
             <motion.div variants={item} className="bg-red-100 h-40 cursor-pointer hover:opacity-80">
               1
             </motion.div>

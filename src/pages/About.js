@@ -14,11 +14,10 @@ const About = ({ pageHandler, currentPage, modalHandler }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.7 }}
           className="page about">
-          <X size="30" className="absolute left-0 top-0 m-5 cursor-pointer" onClick={() => pageHandler('home')} />
+          <X size="30" className="absolute left-0 top-0 m-7 cursor-pointer" onClick={() => pageHandler('home')} />
           <div className="text-ctn py-3 px-10 ml-12">
             <div className="flex items-center">
-              <h2 className="font-bold text-red-500 select-none">Me, Myself & I</h2>
-              <sup className="ml-2 cursor-pointer opacity-90 underline">my skills?</sup>
+              <h2 className="font-bold text-red-500 select-none">About me</h2>
             </div>
             <div className="select-none">
               <p className="my-6">

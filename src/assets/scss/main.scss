@@ -11,6 +11,15 @@ h1 {
 h2 {
   font-size: 3.8rem !important;
   line-height: 1;
+  @media screen and (max-width: 846px) {
+    font-size: 3rem !important;
+  }
+}
+
+h3 {
+  @media screen and (max-width: 889px) {
+    font-size: 1.4rem !important;
+  }
 }
 
 nav {
@@ -18,17 +27,57 @@ nav {
   ul {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 1033px) {
+      display: none;
+    }
+  }
+  .menu-btn {
+    display: none;
+    @media screen and (max-width: 1033px) {
+      display: block;
+    }
   }
 }
 
-.hero {
+.hero-ctn {
   .side-menu {
     width: 5%;
     height: 100%;
+    @media screen and (max-width: 1033px) {
+      display: none;
+    }
   }
   .main-content {
     width: 95%;
     height: 100%;
+    @media screen and (max-width: 1033px) {
+      margin-left: 1.3rem !important;
+    }
+  }
+  h1 {
+    @media screen and (max-width: 612px) {
+      font-size: 3rem !important;
+    }
+    img {
+      @media screen and (max-width: 612px) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  p {
+    @media screen and (max-width: 612px) {
+      font-size: 0.9rem !important;
+      line-height: 18px !important;
+    }
+  }
+
+  button {
+    @media screen and (max-width: 612px) {
+      font-size: 0.9rem !important;
+      padding: 8px 24px !important;
+    }
   }
 }
 
@@ -44,9 +93,19 @@ nav {
 .about {
   display: flex;
   align-items: center;
+  justify-content: center;
+  // @media screen and (max-width: 846px) {
+  //   display: block !important;
+  // }
 
   .text-ctn {
     width: 50%;
+    @media screen and (max-width: 846px) {
+      width: 100%;
+      text-align: left;
+      padding: 0 25px !important;
+      margin: 0 !important;
+    }
   }
   .graphic-ctn {
     width: 50%;
@@ -62,6 +121,9 @@ nav {
       position: relative;
       border-radius: 50%;
       margin: auto;
+    }
+    @media screen and (max-width: 846px) {
+      display: none !important;
     }
   }
 }
@@ -91,7 +153,7 @@ nav {
     position: absolute;
     background: black;
     width: 35%;
-    // height: 70%;
+    min-width: 340px;
     form {
       input {
         color: black;
@@ -103,5 +165,19 @@ nav {
         height: 12rem;
       }
     }
+  }
+}
+
+.side-drawer {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background: black;
+  @media screen and (max-width: 891px) {
+    display: flex;
   }
 }

@@ -16,10 +16,11 @@ const SideMenu = () => {
       className="side-menu px-4 flex items-center content-center">
       <div>
         <a href="https://github.com/mosco98" title="Github">
-          <GitHub fill="#f4f4f4" className="cursor-pointer my-10 hover:opacity-50 transition-all ease-out" />
+          <GitHub size="30" fill="#f4f4f4" className="cursor-pointer my-10 hover:opacity-50 transition-all ease-out" />
         </a>
         <a href="https://www.linkedin.com/in/moses-enyinnaya-142282197/" title="LinkedIn">
           <Linkedin
+            size="30"
             fill="#0a66c2"
             stroke="#0a66c2"
             className="cursor-pointer my-10 hover:opacity-50 transition-all ease-out"
@@ -27,12 +28,13 @@ const SideMenu = () => {
         </a>
         <a href="https://twitter/_moscode" title="Twitter">
           <Twitter
+            size="30"
             fill="#1da1f2"
             stroke="#1da1f2"
             className="cursor-pointer my-10 hover:opacity-50 transition-all ease-out"
           />
         </a>
-        <Mail className="cursor-pointer my-10 hover:opacity-50 transition-all ease-out" />
+        <Mail size="30" className="cursor-pointer my-10 hover:opacity-50 transition-all ease-out" />
       </div>
     </motion.div>
   )
