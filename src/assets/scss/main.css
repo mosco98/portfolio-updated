@@ -70,12 +70,6 @@ nav .menu-btn {
   height: 100%;
 }
 
-@media screen and (max-width: 1033px) {
-  .hero-ctn .main-content {
-    margin-left: 1.3rem !important;
-  }
-}
-
 @media screen and (max-width: 612px) {
   .hero-ctn h1 {
     font-size: 3rem !important;
