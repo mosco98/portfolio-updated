@@ -34,7 +34,9 @@ const SideMenu = () => {
             className="cursor-pointer my-10 hover:opacity-50 transition-all ease-out"
           />
         </a>
-        <Mail size="30" className="cursor-pointer my-10 hover:opacity-50 transition-all ease-out" />
+        <a href="mailto:enyinnayamoses60@gmail.com">
+          <Mail size="30" className="cursor-pointer my-10 hover:opacity-50 transition-all ease-out" />
+        </a>
       </div>
     </motion.div>
   )

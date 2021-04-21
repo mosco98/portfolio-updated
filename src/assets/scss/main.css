@@ -220,7 +220,7 @@ nav .menu-btn {
   background: black;
 }
 
-@media screen and (max-width: 891px) {
+@media screen and (max-width: 1033px) {
   .side-drawer {
     display: -webkit-box;
     display: -ms-flexbox;

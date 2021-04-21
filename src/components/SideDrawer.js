@@ -21,7 +21,11 @@ const SideDrawer = ({ sideDrawerHandler, pageHandler, currentPage }) => {
           onClick={sideDrawerHandler}
         />
         <ul className="text-center">
-          <li className="my-5 cursor-pointer hover:text-red-500 transition-all ease-out">Résumé</li>
+          <li className="my-5 cursor-pointer hover:text-red-500 transition-all ease-out">
+            <a href="https://docs.google.com/document/d/1hYbdfFH7KJWDOZ5vgYn_l_WXEOc_d5HP1yXfdjCO5fQ/edit?usp=sharing">
+              Résumé
+            </a>
+          </li>
           <li
             className={
               currentPage === 'projects'
@@ -69,7 +73,9 @@ const SideDrawer = ({ sideDrawerHandler, pageHandler, currentPage }) => {
               className="cursor-pointer hover:opacity-50 transition-all ease-out"
             />
           </a>
-          <Mail className="cursor-pointer mx-2 hover:opacity-50 transition-all ease-out" />
+          <a href="mailto:enyinnayamoses60@gmail.com">
+            <Mail className="cursor-pointer mx-2 hover:opacity-50 transition-all ease-out" />
+          </a>
         </div>
       </motion.div>
     </AnimatePresence>

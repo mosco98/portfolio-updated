@@ -49,7 +49,7 @@ const Modal = ({ modalHandler }) => {
                 <div className="mt-2">{error && <span className="text-red-800 opacity-90">*{errorMsg}</span>}</div>
                 <div className="my-2">
                   <label className="my-3">Name*</label>
-                  <input className="p-2 focus:outline-none" autoFocus={true} type="text" ref={nameRef} />
+                  <input className="p-2 focus:outline-none" type="text" ref={nameRef} />
                 </div>
                 <div className="my-2">
                   <label className="my-3">Email*</label>

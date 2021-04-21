@@ -16,7 +16,7 @@ const About = ({ pageHandler, currentPage, modalHandler }) => {
           className="page about">
           <X
             size="30"
-            className="absolute left-0 top-0 m-7 cursor-pointer close-icon"
+            className="absolute left-0 top-0 mx-4 my-7 cursor-pointer close-icon"
             onClick={() => pageHandler('home')}
           />
           <div className="text-ctn py-3 px-10 ml-12">
