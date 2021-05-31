@@ -181,3 +181,13 @@ nav {
     display: flex;
   }
 }
+
+.projects-grid-ctn {
+  &::-webkit-scrollbar {
+    width: 0.35rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ef4444;
+  }
+}

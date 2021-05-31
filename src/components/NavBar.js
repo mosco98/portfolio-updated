@@ -1,5 +1,5 @@
-import React from 'react'
-import { Menu } from 'react-feather'
+import React from "react";
+import { Menu } from "react-feather";
 
 const NavBar = ({ pageHandler, currentPage, sideDrawerHandler }) => {
   return (
@@ -14,31 +14,37 @@ const NavBar = ({ pageHandler, currentPage, sideDrawerHandler }) => {
 
       <ul>
         <li className="mx-5 hover:text-red-500 transition-all ease-out cursor-pointer">
-          <a href="https://docs.google.com/document/d/1hYbdfFH7KJWDOZ5vgYn_l_WXEOc_d5HP1yXfdjCO5fQ/edit?usp=sharing">
+          <a
+            href="https://docs.google.com/document/d/1hYbdfFH7KJWDOZ5vgYn_l_WXEOc_d5HP1yXfdjCO5fQ/edit?usp=sharing"
+            rel="noreferrer"
+            target="_blank"
+          >
             Résumé
           </a>
         </li>
         <li
           className={
-            currentPage === 'projects'
-              ? 'mx-5 hover:text-red-500 transition-all ease-out cursor-pointer text-red-500'
-              : 'mx-5 hover:text-red-500 transition-all ease-out cursor-pointer'
+            currentPage === "projects"
+              ? "mx-5 hover:text-red-500 transition-all ease-out cursor-pointer text-red-500"
+              : "mx-5 hover:text-red-500 transition-all ease-out cursor-pointer"
           }
-          onClick={() => pageHandler('projects')}>
+          onClick={() => pageHandler("projects")}
+        >
           Projects
         </li>
         <li
           className={
-            currentPage === 'about'
-              ? 'mx-5 hover:text-red-500 transition-all ease-out cursor-pointer text-red-500'
-              : 'mx-5 hover:text-red-500 transition-all ease-out cursor-pointer'
+            currentPage === "about"
+              ? "mx-5 hover:text-red-500 transition-all ease-out cursor-pointer text-red-500"
+              : "mx-5 hover:text-red-500 transition-all ease-out cursor-pointer"
           }
-          onClick={() => pageHandler('about')}>
+          onClick={() => pageHandler("about")}
+        >
           About
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

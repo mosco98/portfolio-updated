@@ -227,4 +227,12 @@ nav .menu-btn {
     display: flex;
   }
 }
+
+.projects-grid-ctn::-webkit-scrollbar {
+  width: 0.35rem;
+}
+
+.projects-grid-ctn::-webkit-scrollbar-thumb {
+  background-color: #ef4444;
+}
 /*# sourceMappingURL=main.css.map */
